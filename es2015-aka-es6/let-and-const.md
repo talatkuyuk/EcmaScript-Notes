@@ -1,15 +1,23 @@
 # Let and Const
 
-**The general rule**: Suggested that always declare variables with `const` If there is need to update a variable or change it, then switch it from `const` to `let`
+**The general rules**: 
+
+* Variables declared with `let` can be reassigned.
+* Variables declared with `const` must be assigned an initial value, and can’t be reassigned.
+* Variables `let` or `const`, can’t be redeclared in the same scope.
+
+Suggested that always declare variables with `const.`If there is need to update a variable or change it, then switch it from `const` to `let.`
 
 * use `let` when you plan to reassign new values to a variable.
 * use `const` when you don’t plan on reassigning new values to a variable.
 
-No need to use `var`any more, it is considered as bad practice.
+**No need to use `var`any more, it is considered as bad practice.**
 
-#### Hoisting
+### Hoisting
 
 Hoisting is a result of how JavaScript is interpreted by the browser. Essentially, before any JavaScript code is executed, all variables declared with `var` are "hoisted", which means they're raised to the top of the function scope. 
+
+Variables declared with `var` are either scoped _globally_ or _locally_ to an **entire function scope**.
 
 For example, below `getClothing(false)` returns _undefined_:
 
@@ -40,7 +48,17 @@ function getClothing(isCold) {
 }
 ```
 
-But if we describe the variables as `const`, it would _throw an error_: Because `freezing` is declared in another scope, and if statement skip this decleration.
+### 
+
+### let and const
+
+Variables declared with `let` and `const` eliminate this specific issue of hoisting because they’re scoped **to the block**, not to the function. 
+
+If a variable is declared using `let` or `const` inside a block of code \(denoted by curly braces `{ }`\), then the variable is stuck in what is known as the **temporal dead zone** until the variable’s declaration is processed. 
+
+This behavior prevents variables from being accessed only until after they’ve been declared.
+
+In the example, if we describe the variables as `const`, it would _throw an error_: Because `freezing` is declared in another block, and if statement skip this declaration.
 
 ```javascript
 function getClothing(isCold) {
