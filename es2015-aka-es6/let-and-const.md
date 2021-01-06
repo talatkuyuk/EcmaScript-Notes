@@ -1,6 +1,6 @@
 # Let and Const
 
-**The general rules**: 
+### The General Rules: 
 
 * Variables declared with `let` can be reassigned.
 * Variables declared with `const` must be assigned an initial value, and can’t be reassigned.
