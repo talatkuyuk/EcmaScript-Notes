@@ -16,5 +16,3 @@ SOURCES:
 
 1. [https://www.udacity.com/course/es6-javascript-improved--ud356](https://www.udacity.com/course/es6-javascript-improved--ud356), Udacity "ES6 - JavaScript Improved" free course notes.
 2. 
-
-
