@@ -34,7 +34,7 @@ function getClothing(isCold) {
 getClothing(false); // undefined
 ```
 
-Because, at run-time, the `getClothing()` function actually looks more like the second: That is, `freezing` variable is declared but not defined yet.
+Because, at run-time, the `getClothing()` function actually looks more like this: That is, `freezing` variable is declared but not defined yet.
 
 ```javascript
 function getClothing(isCold) {
