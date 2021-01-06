@@ -42,7 +42,7 @@ function getClothing(isCold) {
 
 But if we describe the variables as `const`, it would _throw an error_: Because `freezing` is declared in another scope, and if statement skip this decleration.
 
-```text
+```javascript
 function getClothing(isCold) {
   if (isCold) {
     const freezing = 'Grab a jacket!';
