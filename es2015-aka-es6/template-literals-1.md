@@ -1,6 +1,6 @@
 # Template Literals
 
-\(ES6\) standard supports **string interpolation** using **backticks** ````````. This feature is called **template literals**.
+ES6, supports **string interpolation** using **backticks** ````````. This feature is called **template literals**.
 
 **Template literals** are essentially **string literals** that include embedded expressions.
 
@@ -22,13 +22,15 @@ let note = `${teacher.name}
   Thank you
   
   ${student.guardian}`;
+  
+console.log(note);
 ```
 
-**Template literals can hold any javascript expression within** `${expression}`
+**Template literals can hold any javascript expression within `${expression}`**
 
 ```javascript
 console.log(`Your total point is ${point + extra}.`);
-const result = `Dear ${name}, you ${doSomething() ? 'passed' : 'failed' }.`;
+const result = `Dear ${name}, you ${doEvaluate(id) ? 'passed' : 'failed' }.`;
 console.log(result);
 ```
 
