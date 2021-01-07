@@ -10,9 +10,9 @@
 ## ES2015 \(aka ES6\)
 
 * [Let and Const](es2015-aka-es6/let-and-const.md)
+* [Template Literals](es2015-aka-es6/template-literals-1.md)
 * [Array Destructuring](es2015-aka-es6/array-destructuring.md)
 * [Object Destructuring](es2015-aka-es6/object-destructuring.md)
-* [Template Literals](es2015-aka-es6/template-literals-1.md)
 * [Object Literal Shorthand](es2015-aka-es6/object-literal-shorthand.md)
 * [Iteration](es2015-aka-es6/iteration.md)
 * [For Loops \(in, of\)](es2015-aka-es6/for..of-loop.md)
