@@ -8,13 +8,14 @@ I have just finished the **Udacity "ES6 - JavaScript Improved" free course**. \
 
 I strongly recommend you enroll to Udacity free course "ES6 - JavaScript Improved" , since there is good coverage about ES6 with good explanations and examples. It is well-prepared and self-paced course.
 
-I assume this document as ECMAScript CHEAT SHEET for myslef.
+I assume this document as **ECMAScript CHEAT SHEET** for myself.
 
-I have also read some good articles about EcmaScript. I am going to embed and merge them into this document.
+I have also read some good articles about ECMAScript. I am going to embed and merge them into this document.
 
 SOURCES:
 
 1. [https://www.udacity.com/course/es6-javascript-improved--ud356](https://www.udacity.com/course/es6-javascript-improved--ud356), Udacity "ES6 - JavaScript Improved" free course notes.
-2. 
+2. [https://en.wikipedia.org/wiki/ECMAScript](https://en.wikipedia.org/wiki/ECMAScript), wikipedia, January, 2021
+3. 
 
 

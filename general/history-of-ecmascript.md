@@ -1,6 +1,6 @@
 # History of ECMAScript
 
-Summory of History of ECMAScript \([https://en.wikipedia.org/wiki/ECMAScript](https://en.wikipedia.org/wiki/ECMAScript)\)
+Summary of History of ECMAScript \([https://en.wikipedia.org/wiki/ECMAScript](https://en.wikipedia.org/wiki/ECMAScript)\)
 
 | Date | Name | Edition | aka |
 | :--- | :--- | :--- | :--- |

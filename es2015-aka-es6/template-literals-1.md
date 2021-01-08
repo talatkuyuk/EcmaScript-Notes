@@ -1,6 +1,6 @@
 # Template Literals
 
-ES6, supports **string interpolation** using **backticks** ````````. This feature is called **template literals**.
+ES6, supports **string interpolation** using **backticks** ````````and placeholders. This feature is called **template literals**.
 
 **Template literals** are essentially **string literals** that include embedded expressions.
 
