@@ -4,8 +4,8 @@
 
 ## General
 
-* [What is EcmaScript](general/what-is-ecma-script.md)
-* [History of EcmaScript](general/history-of-ecmascript.md)
+* [What is ECMAScript](general/what-is-ecma-script.md)
+* [History of ECMAScript](general/history-of-ecmascript.md)
 
 ## ES2015 \(aka ES6\)
 
