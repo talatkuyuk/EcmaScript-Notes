@@ -17,4 +17,5 @@
 * [Iterable and For .. of Loop](es2015-aka-es6/iterable-and-for..of-loop.md)
 * [Spread Operator and Rest Parameter](es2015-aka-es6/spread-operator-and-rest-parameter.md)
 * [Arrow Functions](es2015-aka-es6/arrow-functions.md)
+* [This keyword in Arrow functions](es2015-aka-es6/this-keyword-in-arrow-functions.md)
 

@@ -114,7 +114,8 @@ const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map( name => {
       <td style="text-align:left">
         <p></p>
         <ul>
-          <li>there&apos;s a gotcha with the <code>this</code> keyword</li>
+          <li>there&apos;s a gotcha with the <code>this</code> keyword. The way arrow
+            functions handle <code>this</code> keyword is different from regular functions</li>
           <li>arrow functions are only <em>expressions, </em>there&apos;s no an arrow
             function declaration.</li>
         </ul>
