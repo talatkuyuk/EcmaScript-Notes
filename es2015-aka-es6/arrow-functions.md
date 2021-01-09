@@ -61,32 +61,32 @@ const bigVowel = letter => letter.toUpperCase();
 
 
 
-### Concise and block body syntax <a id="concise-and-block-body-syntax"></a>
+### Arrow functions with _Concise_ _Body_ _Syntax_ <a id="concise-and-block-body-syntax"></a>
 
-All of the arrow functions we've been looking at have only had a single expression as the function body:
+When an arrow function **only has a single expression**, its body is called as _"**concise body syntax**"_.
 
-```text
+* has _no curly braces_ surrounding the function body
+* and automatically returns the expression.
+
+```javascript
 const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(
   name => name.toUpperCase()
 );
 ```
 
-This format of the function body is called the _"concise body syntax"_. The concise syntax:
+### Arrow functions with _Block Body Syntax_ <a id="concise-and-block-body-syntax"></a>
 
-* has no curly braces surrounding the function body
-* and automatically returns the expression.
+When an arrow function **has more than one line of code**, its body is called as _"**block body syntax**"_.
 
-If you need more than just a single line of code in your arrow function's body, then you can use the _"block body syntax"_.
+* it _uses curly braces_ to wrap the function body
+* and a `return` statement needs to be used to actually return something from the function.
 
-```text
+```javascript
 const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map( name => {
   name = name.toUpperCase();
   return `${name} has ${name.length} characters in their name`;
 });
 ```
 
-Important things to keep in mind with the block syntax:
 
-* it uses curly braces to wrap the function body
-* and a `return` statement needs to be used to actually return something from the function.
 

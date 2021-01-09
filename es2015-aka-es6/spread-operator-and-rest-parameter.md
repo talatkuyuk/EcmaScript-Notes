@@ -18,6 +18,8 @@ console.log(...primes); // 2 3 5 7 11 13 17 19
 
 ### Combining Arrays 
 
+Spread operator gives a better way for combaning arrays.
+
 ```javascript
 const fruits = ["apples", "bananas"];
 const vegetables = ["corn", "carrots"];
