@@ -120,7 +120,7 @@ console.log(dessert.scoops); // 1
 
 \*\*\*\*
 
-**If we changed the `addScoop()` method also to an arrow function?**  It doesn't work. _Arrow functions inherit their `this` value from their surrounding context._ Outside of the `addScoop()` method, the value of `this` is the global object. So if `addScoop()` is an arrow function, the value of `this` _inside_ `addScoop()` is the global object. _Which then makes the value of `this` in the function passed to `setTimeout()` also set to the global object!_
+**If we changed the `addScoop()` method also to an arrow function?**  It doesn't work. _Arrow functions inherit their `this` value from their surrounding context._ Outside of the `addScoop()` method, the value of `this` is the global object. So if `addScoop()` is an arrow function, the value of `this` _inside_ `addScoop()` is the global object. Which then makes the value of `this` in the function passed to `setTimeout()` also set to the global object!
 
 ```javascript
 // constructor
