@@ -65,8 +65,8 @@ const bigVowel = letter => letter.toUpperCase();
 
 When an arrow function **only has a single expression**, its body is called as _"**concise body syntax**"_.
 
-* has _no curly braces_ surrounding the function body
-* and automatically returns the expression.
+* has _no curly braces_ surrounding the function body,
+* automatically returns the expression.
 
 ```javascript
 const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(
@@ -78,8 +78,8 @@ const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(
 
 When an arrow function **has more than one line of code**, its body is called as _"**block body syntax**"_.
 
-* it _uses curly braces_ to wrap the function body
-* and a `return` statement needs to be used to actually return something from the function.
+* it _uses curly braces_ to wrap the function body,
+* a `return` statement needs to be used to actually return something from the function.
 
 ```javascript
 const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map( name => {
@@ -87,6 +87,41 @@ const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map( name => {
   return `${name} has ${name.length} characters in their name`;
 });
 ```
+
+
+
+### Advantage and Disadvantage of Arrow Functions
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"><b>Pros</b>
+      </th>
+      <th style="text-align:left"><b>Cons</b>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <p></p>
+        <ul>
+          <li>The syntax is a lot shorter,</li>
+          <li>it&apos;s easier to write and read single-line functions,</li>
+          <li>Automatically return when using the concise body syntax.</li>
+        </ul>
+      </td>
+      <td style="text-align:left">
+        <p></p>
+        <ul>
+          <li>there&apos;s a gotcha with the <code>this</code> keyword</li>
+          <li>arrow functions are only <em>expressions, </em>there&apos;s no an arrow
+            function declaration.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 
 
