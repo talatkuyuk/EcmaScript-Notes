@@ -18,4 +18,5 @@
 * [Spread Operator and Rest Parameter](es2015-aka-es6/spread-operator-and-rest-parameter.md)
 * [Arrow Functions](es2015-aka-es6/arrow-functions.md)
 * [This keyword in Arrow functions](es2015-aka-es6/this-keyword-in-arrow-functions.md)
+* [Default Function Parameters](es2015-aka-es6/default-function-parameters.md)
 
