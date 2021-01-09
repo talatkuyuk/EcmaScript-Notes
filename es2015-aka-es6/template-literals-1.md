@@ -34,7 +34,7 @@ const result = `Dear ${name}, you ${doEvaluate(id) ? 'passed' : 'failed' }.`;
 console.log(result);
 ```
 
-**Prior to ES6**, the old way to concatenate strings together was by using the **string concatenation operator** \( `+` \).
+**Prior to ES6**, the old way to concatenate strings was by using the **string concatenation operator** \( `+` \).
 
 ```javascript
 let message = ' Dear ' + student.name + ', your exam result is ' + point + '.';

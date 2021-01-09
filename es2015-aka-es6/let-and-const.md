@@ -4,7 +4,7 @@
 
 * Variables declared with `let` can be reassigned.
 * Variables declared with `const` must be assigned an initial value, and can’t be reassigned.
-* Variables `let` or `const`, can’t be redeclared in the same scope.
+* Variables declared with `let` or `const`, can’t be redeclared in the same scope.
 
 Suggested that always declare variables with `const.`If there is need to update a variable or change it, then switch it from `const` to `let.`
 
