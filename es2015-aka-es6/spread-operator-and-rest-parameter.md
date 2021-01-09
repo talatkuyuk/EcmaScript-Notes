@@ -18,7 +18,7 @@ console.log(...primes); // 2 3 5 7 11 13 17 19
 
 ### Combining Arrays 
 
-Spread operator gives a better way for combaning arrays.
+Spread operator gives a better way for combining arrays.
 
 ```javascript
 const fruits = ["apples", "bananas"];
@@ -38,7 +38,7 @@ const produce = [...fruits, ...vegetables]; // apples bananas corn carrots
 
 ### Rest parameter <a id="rest-parameter"></a>
 
-The **rest parameter**, also written with _three consecutive dots_ \( `...` \), allows to represent an **indefinite number of elements as an array**. By using the rest parameter, `items` is assigned the _rest_ of the values in the array \(as an array\).
+The **rest parameter**, also written with _three consecutive dots_ \( `...` \), allows to represent an **indefinite number of elements as an array**. By using the rest parameter, `...rest_parameter` is assigned the _rest_ _of the values_ in the array \(as an array\).
 
 ```javascript
 const order = [20.17, 1.50, "cheese", "eggs"];
@@ -46,7 +46,7 @@ const [total, tax, ...items] = order;
 console.log(total, tax, items); // 20.17 1.5 ["cheese", "eggs"]
 ```
 
-Another use case for the rest parameter is when you’re working with variadic functions. **Variadic functions** are functions that take an indefinite number of arguments.
+**Another use case** **for the rest parameter** is when you’re working with variadic functions. **Variadic functions** are functions that take an indefinite number of arguments.
 
 ```javascript
 // This version of the sum() function is more concise and is easier to read. 
@@ -74,5 +74,5 @@ function sum() {
 }
 ```
 
-This is misleading because the definition for the `sum()` doesn't have any parameter but we know it can handle an indefinite amount of arguments. And, it can be hard to understand, If you’ve never used the arguments object before.
+This is misleading because the definition for the `sum()` doesn't have any parameter but we know it can handle an indefinite amount of arguments. And, it can be hard to understand, If never used the arguments object before.
 
