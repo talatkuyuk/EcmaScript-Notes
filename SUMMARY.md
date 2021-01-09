@@ -19,4 +19,5 @@
 * [Arrow Functions](es2015-aka-es6/arrow-functions.md)
 * [This keyword in Arrow functions](es2015-aka-es6/this-keyword-in-arrow-functions.md)
 * [Default Function Parameters](es2015-aka-es6/default-function-parameters.md)
+* [Defaults and Destructuring](es2015-aka-es6/defaults-and-destructuring.md)
 
