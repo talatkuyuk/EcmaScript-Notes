@@ -55,7 +55,9 @@ In the example, `super` was used in two different ways. In `Maple`'s constructor
 
 **`super` must be called before `this`**. In a subclass constructor function, before `this` can be used, a call to the super class must be made.
 
+A Mapple instance is also Tree instance.
 
+Use `super()` method to create a `Tree` object from inside the `Mapple` class's `constructor` method.
 
 ### Compared to ES5 subclasses <a id="compared-to-es5-subclasses"></a>
 
@@ -100,4 +102,34 @@ myMaple.changeSeason('spring');
 ```
 
 Both this code and the class-style code above achieve the same functionality.
+
+### An Example for Extending a Class
+
+Create a `Bicycle` subclass that extends the `Vehicle` class. The `Bicycle` subclass should override `Vehicle`'s constructor function by changing the default values for `wheels` from `4` to `2` and `horn`from `'beep beep'` to `'honk honk'`.
+
+```javascript
+class Vehicle { 
+    constructor(color = 'blue', wheels = 4, horn = 'beep beep') { 
+        this.color = color; this.wheels = wheels; this.horn = horn; 
+    }
+    
+    honkHorn() {
+        console.log(this.horn);
+    }
+}
+
+class Bicycle extends Vehicle { 
+    constructor (color, wheels=2, horn="honk honk") { 
+        super(color, wheels, horn); 
+    } 
+}
+
+const myVehicle = new Vehicle(); 
+myVehicle.honkHorn(); // beep beep 
+
+const myBike = new Bicycle(); 
+myBike.honkHorn(); // honk honk
+```
+
+
 

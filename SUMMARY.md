@@ -14,7 +14,8 @@
 * [Array Destructuring](es2015-aka-es6/array-destructuring.md)
 * [Object Destructuring](es2015-aka-es6/object-destructuring.md)
 * [Object Literal Shorthand](es2015-aka-es6/object-literal-shorthand.md)
-* [Iterable and For .. of Loop](es2015-aka-es6/iterable-and-for..of-loop.md)
+* [Iterable & Iterator Protocol](es2015-aka-es6/iterable-and-iterator-protocol.md)
+* [For .. of Loop](es2015-aka-es6/iterable-and-for..of-loop.md)
 * [Spread Operator and Rest Parameter](es2015-aka-es6/spread-operator-and-rest-parameter.md)
 * [Arrow Functions](es2015-aka-es6/arrow-functions.md)
 * [This keyword in Arrow functions](es2015-aka-es6/this-keyword-in-arrow-functions.md)
@@ -22,4 +23,7 @@
 * [Defaults and Destructuring](es2015-aka-es6/defaults-and-destructuring.md)
 * [Classes](es2015-aka-es6/classes.md)
 * [Super and Extends](es2015-aka-es6/super-and-extends.md)
+* [Addition to Data Types](es2015-aka-es6/addition-to-data-types.md)
+* [Symbols](es2015-aka-es6/symbols.md)
+* [Sets](es2015-aka-es6/sets.md)
 

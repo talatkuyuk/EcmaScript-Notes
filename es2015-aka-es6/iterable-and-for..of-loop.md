@@ -1,12 +1,4 @@
-# Iterable and For .. of Loop
-
-### Iterable Protocol
-
-ES6 represents a new feature for iteration that exists in javascript, called as  **iterable protocol.** _ES6 introduces **a new iterable interface** that allows us to customize how objects are iterated._
-
-**Iterable protocol,** allows JavaScript objects to define or customize their iteration behaviour.
-
-
+# For .. of Loop
 
 ### For .. of Loop
 
