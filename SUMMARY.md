@@ -26,4 +26,6 @@
 * [Addition to Data Types](es2015-aka-es6/addition-to-data-types.md)
 * [Symbols](es2015-aka-es6/symbols.md)
 * [Sets](es2015-aka-es6/sets.md)
+* [WeakSets](es2015-aka-es6/weaksets.md)
+* [Maps](es2015-aka-es6/maps.md)
 
