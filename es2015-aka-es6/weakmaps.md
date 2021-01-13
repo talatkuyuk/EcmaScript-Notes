@@ -34,7 +34,7 @@ console.log(library);
 // WeakMap {Object {title:'Pride', author:'Jane'}=>true, Object {...}=>false,...}
 ```
 
-Adding something other than an object as a key will throw an **error**,  because **WeakMap can only contain objects as keys**. 
+Adding other than an object as a key will throw an **error**,  since **WeakMap can only contain objects as keys**.
 
 ```javascript
 library.set('Grapes', false);

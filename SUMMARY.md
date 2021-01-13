@@ -29,5 +29,5 @@
 * [WeakSets](es2015-aka-es6/weaksets.md)
 * [Maps](es2015-aka-es6/maps.md)
 * [WeakMaps](es2015-aka-es6/weakmaps.md)
-* [fatih](es2015-aka-es6/fatih.md)
+* [Promises](es2015-aka-es6/promises.md)
 
