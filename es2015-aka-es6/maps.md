@@ -12,7 +12,7 @@
 
 **Maps** are similar to _Objects_ because Maps store key-value pairs similar to how objects contain named properties with values. 
 
-Essentially, **a Map** is an object that lets you store key-value pairs where both the keys and the **values can be objects, primitive values, or a combination of the two.**
+**A Map** is an object that lets you store key-value pairs where both the keys and the values can be **objects, primitive values**, or **a combination of the two.**
 
 ### How to Create and Modify a Map <a id="how-to-create-a-map"></a>
 
@@ -67,40 +67,26 @@ console.log(employees); // Map {}
 
 We’ve got three different options to choose from:
 
-1. Step through each key or value using the Map’s default iterator
-2. Loop through each key-value pair using the new `for...of` loop
-3. Loop through each key-value pair using the Map’s `.forEach()` method
+1. Step through each key or value using the **Map’s default iterator**
+2. Loop through each key-value pair using the new **`for...of` loop**
+3. Loop through each key-value pair using the Map’s **`.forEach()` method**
 
 ### 1. Using the MapIterator <a id="1-using-the-mapiterator"></a>
 
-Using both the `.keys()` and `.values()` methods on a Map will return a new iterator object called `MapIterator`. You can store that iterator object in a new variable and use `.next()` to loop through each key or value. Depending on which method you use, will determine if your iterator has access to the Map’s keys or the Map’s values.
+Using both the `.keys()` and `.values()` methods on a Map will return a new iterator object called `MapIterator`. You can store that iterator object in a new variable and use `.next()` to loop through each key or value. 
 
-```text
+```javascript
+const members = new Map();
+members.set('Evelyn', 75.68);
+members.set('Liam', 20.16);
+members.set('Sophia', 0);
+members.set('Marcus', 10.25);
+
 let iteratorObjForKeys = members.keys();
-iteratorObjForKeys.next();
-```
+iteratorObjForKeys.next(); // Object {value: 'Evelyn', done: false}
+iteratorObjForKeys.next(); // Object {value: 'Liam', done: false}
+iteratorObjForKeys.next(); // Object {value: 'Sophia', done: false}
 
-> `Object {value: 'Evelyn', done: false}`
-
-Use `.next()` to the get the next key value.
-
-```text
-iteratorObjForKeys.next();
-```
-
-> `Object {value: 'Liam', done: false}`
-
-And so on.
-
-```text
-iteratorObjForKeys.next();
-```
-
-> `Object {value: 'Sophia', done: false}`
-
-On the flipside, use the `.values()` method to access the Map’s values, and then repeat the same process.
-
-```text
 let iteratorObjForValues = members.values();
 iteratorObjForValues.next(); // Object {value: 75.68, done: false}
 ```
@@ -109,33 +95,23 @@ iteratorObjForValues.next(); // Object {value: 75.68, done: false}
 
 Your second option for looping through a Map is with a `for...of` loop.
 
-```text
+```javascript
 for (const member of members) {
-  console.log(member);
+  console.log(member); // ['Evelyn', 75.68] and so on.
 }
-// ['Evelyn', 75.68]
-// ['Liam', 20.16]
-// ['Sophia', 0]
-// ['Marcus', 10.25]
-```
 
-However, when you use a `for...of` loop with a Map, you don’t exactly get back a key or a value. Instead, the key-value pair is split up into an array where the first element is the key and the second element is the value. If only there were a way to fix this?
-
-```text
 for (const member of members) { 
     [key, value] = member; 
     let myobject = {key: value};
-    console.log(myobject);
+    console.log(myobject); // {'Evelyn': 75.68}
 }
 ```
-
-
 
 ### 3. Using a forEach Loop <a id="3-using-a-foreach-loop"></a>
 
 Your last option for looping through a Map is with the `.forEach()` method.
 
-```text
+```javascript
 members.forEach((value, key) => console.log(key, value));
 ```
 

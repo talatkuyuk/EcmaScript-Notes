@@ -13,7 +13,13 @@ The biggest differences between a set and an array are:
 
 Basically, a Set is an object that lets you store unique items. You can add items to a Set, remove items from a Set, and loop over a Set. These items can be either primitive values or objects.
 
-### How to Create a Set <a id="how-to-create-a-set"></a>
+### How to Create and Modify a Set <a id="how-to-create-a-set"></a>
+
+Constructor of Set `new Set()`  `new Set([...values])` . 
+
+Properties of Set: `.size` 
+
+Methods of Set, `.add()`   `.delete()`   `.clear()`   `.has()`   `.values()`   `.keys()` 
 
 ```javascript
 const games = new Set(); // creates an empty Set games with no items.
@@ -21,17 +27,7 @@ console.log(games); // Set {}
 
 const games = new Set(['Super Mario', 'Banjo-Kazooie', 'Super Mario']);
 console.log(games); // Set {'Super Mario', 'Banjo-Kazooie'}
-```
 
-If you want to create a Set from a list of values, you use an array: Set removes the duplicate entry.
-
-### Modifying and Working with Sets <a id="modifying-sets"></a>
-
-Properties of Set: `.size` 
-
-Methods of Set, `.add()`   `.delete()`   `.clear()`   `.has()`   `.values()`   `.keys()` 
-
-```javascript
 const names = new Set(['John', 'Katie', 'Mario', 'Katie']);
 
 names.add('Tool');
@@ -47,6 +43,8 @@ console.log(games); // Set {}
 console.log(names.size); // 0
 console.log(names.has('John')); // false
 ```
+
+If you want to create a Set from a list of values, you use an array: Set removes the duplicate entry.
 
 Attempting to `.add()` a duplicate item to a Set won’t give an error, but the item will not be added. `.add()` returns the `Set` if an item is successfully added.
 
@@ -68,6 +66,7 @@ The `.entries()` method returns a new iterator object that contains **an array o
 
 ```javascript
 console.log(months.values());
+console.log(months.keys());
 // SetIterator {'January', 'February', 'March', 'April', 'May', 'June', 
 // 'July', 'August', 'September', 'October', 'November', 'December'}
 
@@ -76,7 +75,13 @@ console.log(months.entries());
 
 ```
 
-### Iterating Sets
+### How to Loop Through a Set <a id="how-to-create-a-map"></a>
+
+We’ve got three different options to choose from:
+
+1. Step through each item using the **Set’s default iterator**
+2. Loop through each item using the new **`for...of` loop**
+3. Loop through each item using the Set’s **`.forEach()` method**
 
 🧰 We can use the **Set’s default iterator** to step through each item in a Set, one by one.
 
@@ -100,7 +105,7 @@ for (let item of colors.values()) console.log(item);
 for (let [key, value] of colors.entries()) console.log(key);
 ```
 
-### forEach Method
+🧰 We can also  **`.forEach()` method** to loop in a Set.
 
 The `.forEach(callbackFn[, thisArg])` method calls `callbackFn` once for each value present in the `Set` object, in insertion order. If a `thisArg` parameter is provided, it will be used as the `this` value for each invocation of `callbackFn`. The callback function is provided with three parameters as follows:
 
