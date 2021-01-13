@@ -7,9 +7,9 @@
 
 No need to use `var`any more, it is considered as bad practice.
 
-#### Hoisting
+## Hoisting
 
-Hoisting is a result of how JavaScript is interpreted by the browser. Essentially, before any JavaScript code is executed, all variables declared with `var` are "hoisted", which means they're raised to the top of the function scope. 
+Hoisting is a result of how JavaScript is interpreted by the browser. Essentially, before any JavaScript code is executed, all variables declared with `var` are "hoisted", which means they're raised to the top of the function scope.
 
 For example, below `getClothing(false)` returns _undefined_:
 
