@@ -113,6 +113,10 @@ Your last option for looping through a Map is with the `.forEach()` method.
 
 ```javascript
 members.forEach((value, key) => console.log(key, value));
+// 'Evelyn' 75.68
+// 'Liam' 20.16
+// 'Sophia' 0
+// 'Marcus' 10.25
 ```
 
 

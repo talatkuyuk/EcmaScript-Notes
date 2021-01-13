@@ -28,4 +28,5 @@
 * [Sets](es2015-aka-es6/sets.md)
 * [WeakSets](es2015-aka-es6/weaksets.md)
 * [Maps](es2015-aka-es6/maps.md)
+* [WeakMaps](es2015-aka-es6/weakmaps.md)
 
