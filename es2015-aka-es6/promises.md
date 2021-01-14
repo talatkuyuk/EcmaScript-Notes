@@ -2,9 +2,11 @@
 
 ## Promises <a id="promises"></a>
 
-**A promise** will let a process start that will be done **asynchronously** and let main process get back to its regular work.
+**A promise** will let a process start that will be done **asynchronously** and let the main process get back to its regular work.
 
-**A promise** must have **a asynchronous function** as an argument while constructed. A JavaScript Promise is created with the constructor function - `new Promise()`
+A JavaScript Promise is created with the constructor function - `new Promise()`
+
+**A promise** must have **a asynchronous function** as an argument while constructed. 
 
 ```javascript
 new Promise(function () {
