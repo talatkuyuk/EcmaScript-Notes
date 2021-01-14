@@ -2,9 +2,11 @@
 
 ## Promises <a id="promises"></a>
 
-A JavaScript Promise is created with the new [Promise constructor function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) - `new Promise()`. A promise will let you start some work that will be done **asynchronously** and let you get back to your regular work. When you create the promise, you must give it the code that will be run asynchronously. You provide this code as the argument of the constructor function:
+**A promise** will let a process start that will be done **asynchronously** and let main process get back to its regular work.
 
-```text
+**A promise** must have **a asynchronous function** as an argument while constructed. A JavaScript Promise is created with the constructor function - `new Promise()`
+
+```javascript
 new Promise(function () {
     window.setTimeout(function createSundae(flavor = 'chocolate') {
         const sundae = {};
@@ -15,8 +17,6 @@ new Promise(function () {
     }, Math.random() * 2000);
 });
 ```
-
-This code creates a promise that will start in a few seconds after I make the request. Then there are a number of steps that need to be made in the `createSundae` function. 
 
 ### Indicated a Successful Request or a Failed Request <a id="indicated-a-successful-request-or-a-failed-request"></a>
 
