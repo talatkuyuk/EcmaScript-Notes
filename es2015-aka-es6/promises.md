@@ -59,7 +59,9 @@ A Promise constructor takes a function that will run and then, after some amount
 
 ### Promises Return Immediately <a id="promises-return-immediately"></a>
 
-A Promise will immediately return an object. That object has a **`.then()` method** on it that we can use to have it notify us if the request we made in the promise was either successful or failed. The `.then()` method **takes two functions**:
+A Promise will immediately return an object. That object has a **`.then()` method** on it that we can use to have it notify us if the request we made in the promise was either successful or failed. 
+
+The `.then()` method **takes two functions**:
 
 1. the function to run if the request completed successfully
 2. the function to run if the request failed to complete
