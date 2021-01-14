@@ -2,12 +2,16 @@
 
 **A JavaScript Proxy** will let one object stand in for another object to handle all the interactions for that other object. **The proxy** can handle requests directly pass data back and forth to the target object, whole bunch of other things.
 
+**A proxy object** sits between a real object and the calling code. The calling code interacts with the proxy instead of the real object.
+
+Proxies are a powerful new way to create and manage the interactions between objects.
+
 To create a proxy object use the Proxy constructor - `new Proxy();`which takes two arguments:
 
 * **the target object** that it will be the proxy for.
 * **the handler object:** an object containing the list of methods it will handle for the proxied object.
 
-If we provide **an empty handler object**, the proxy just passes the request directly to the source object.
+If we provide **an empty handler object**, the default behavior is sent to the target object, the proxy just passes the request directly to the target object. 
 
 ```javascript
 var richard = {status: 'looking for work'};
@@ -18,11 +22,11 @@ agent.status; // returns 'looking for work'
 
 **If we want the proxy object to actually intercept the request, that's what the handler object is for!**
 
-The key to making Proxies useful is the **handler object** that's passed as the second object to the Proxy constructor. The handler object is made up of a methods that will be used for property access. 
+The key to making Proxies useful is the **handler object** that's passed as the second object to the Proxy constructor. The handler object is made up of 1 of 13 different "traps".  **A trap** is a function that will intercept calls to properties let you run code
 
 ### Get Trap <a id="get-trap"></a>
 
-The `get` trap is used to "intercept" calls to properties:
+The handler object is made up of a methods that will be used for property access. The `get` trap is used to "intercept" calls to properties:
 
 ```javascript
 const richard = {status: 'looking for work'};
@@ -106,7 +110,52 @@ There are actually a total of **13 different traps** that can be used in a handl
 
 [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy)
 
+### Proxies vs ES5 Getters and Setters
 
+The proxies provide beneficial over ES5's getter and setter method that exists already.
+
+With ES5's getter and setter methods, you need to know _before hand_ the properties that are going to be get/set:
+
+```javascript
+var obj = {
+    _age: 5,
+    _height: 4,
+    get age() {
+        console.log(`getting the "age" property`);
+        console.log(this._age);
+    },
+    get height() {
+        console.log(`getting the "height" property`);
+        console.log(this._height);
+    }
+};
+
+obj.age; // logs 'getting the "age" property' & 5
+obj.height; // logs 'getting the "height" property' & 4
+
+// But look what happens when we now add a new property to the object:
+obj.weight = 120; // set a new property on the object
+obj.weight; // logs just 120
+```
+
+With ES6 Proxies, we _do not need to know the properties beforehand_: All well and good, just like the ES5 code, but look what happens when we add a new property: A `weight` property was added to the proxy object, and when it was later retrieved, it displayed a log message!
+
+```javascript
+const proxyObj = new Proxy({age: 5, height: 4}, {
+    get(targetObj, property) {
+        console.log(`getting the ${property} property`);
+        console.log(targetObj[property]);
+    }
+});
+
+proxyObj.age; // logs 'getting the age property' & 5
+proxyObj.height; // logs 'getting the height property' & 4
+
+proxyObj.weight = 120; // set a new property on the object
+proxyObj.weight; // logs 'getting the weight property' & 120
+```
+
+Some functionality of proxy objects may seem similar to existing ES5 getter/setter methods. But with proxies, you do not need to initialize the object with getters/setters for each property when the object is initialized.
 
 
 
