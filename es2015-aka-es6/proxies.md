@@ -11,7 +11,7 @@ To create a proxy object use the Proxy constructor - `new Proxy();`which takes t
 * **the target object** that it will be the proxy for.
 * **the handler object:** an object containing the list of methods it will handle for the proxied object.
 
-If we provide **an empty handler object**, the default behavior is sent to the target object, the proxy just passes the request directly to the target object. 
+If we provide **an empty handler object**, the default behavior is sent to the target object, the proxy just passes the request directly to the target object.
 
 ```javascript
 var richard = {status: 'looking for work'};
