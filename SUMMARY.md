@@ -31,4 +31,5 @@
 * [WeakMaps](es2015-aka-es6/weakmaps.md)
 * [Promises](es2015-aka-es6/promises.md)
 * [Proxies](es2015-aka-es6/proxies.md)
+* [Generators](es2015-aka-es6/generators.md)
 
