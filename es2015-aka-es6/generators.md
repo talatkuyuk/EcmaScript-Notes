@@ -138,20 +138,21 @@ const iterator = displayResponse();
 iterator.next(); 
 
 // send data into the generator
+// It will "replace" the yield keyword with the data that is provided.
 iterator.next('Hello Udacity'); // Your response is "Hello Udacity"!
 ```
 
-Calling `.next()` with data \(i.e. `.next('Richard')`\) will send data into the generator function where it last left off. It will "replace" the yield keyword with the data that you provided.
+**The `yield` keyword is used to pause a generator** _**and**_ **used to send data outside of the generator, and then the `.next()` method is used to pass data** _**into**_ **the generator.** 
 
-So the `yield` keyword is used to pause a generator _and_ used to send data outside of the generator, and then the `.next()` method is used to pass data _into_ the generator. Here's an example that makes use of both of these to cycle through a list of names one at a time:
+Here's an example that makes use of both of these to cycle through a list of names one at a time:
 
-```text
+```javascript
 function* getEmployee() {
-    const names = ['Amanda', 'Diego', 'Farrin', 'James', 'Kagure', 'Kavita', 'Orit', 'Richard'];
+    const names = ['Amanda', 'Diego', 'Farrin','Kagure'];
     const facts = [];
 
     for (const name of names) {
-        // yield *out* each name AND store the returned data into the facts array
+        // yield *out* each name AND store the returned data into the array
         facts.push(yield name); 
     }
 
@@ -169,14 +170,8 @@ name = generatorIterator.next(`${name} is cool!`).value;
 // pass data in *and* get the next name
 name = generatorIterator.next(`${name} is awesome!`).value; 
 
-// pass data in *and* get the next name
-name = generatorIterator.next(`${name} is stupendous!`).value; 
-
 // you get the idea
 name = generatorIterator.next(`${name} is rad!`).value; 
-name = generatorIterator.next(`${name} is impressive!`).value;
-name = generatorIterator.next(`${name} is stunning!`).value;
-name = generatorIterator.next(`${name} is awe-inspiring!`).value;
 
 // pass the last data in, generator ends and returns the array
 const positions = generatorIterator.next(`${name} is magnificent!`).value; 
