@@ -180,3 +180,40 @@ const positions = generatorIterator.next(`${name} is magnificent!`).value;
 positions.join('\n'); 
 ```
 
+### An Example how to call iterator correctly.
+
+```javascript
+function* createSundae() {
+    const toppings = [];
+
+    toppings.push(yield);
+    toppings.push(yield);
+    toppings.push(yield);
+
+    return toppings;
+}
+
+var it = createSundae();
+it.next('hot');
+it.next('sprink');
+it.next('whipped');
+it.next(); // the toppings array will have undefined as its last item
+// { value: [ 'sprink', 'whipped', undefined ], done: true }
+
+// calling iterations correctly
+var it = createSundae();
+it.next();
+it.next('hot');
+it.next('sprink');
+it.next('whipped');
+// { value: [ 'hot', 'sprink', 'whipped' ], done: true }
+```
+
+### Usecases
+
+Generators are a powerful new kind of function that is able to pause its execution while also maintaining its own state. Generators are great for iterating over a list of items one at a time so you can handle each item on its own before moving on to the next one. 
+
+You can also use generators to handle nested callbacks. For example, let's say that an app needs to get a list of all repositories _and_ the number of times they've been starred. Well, before you can get the number of stars for each repository, you'd need to get the user's information. Then after retrieving the user's profile the code can then take that information to find all of the repositories. 
+
+Generators will also be used heavily in upcoming additions to the JavaScript language. One upcoming feature that will make use of them is async functions.
+

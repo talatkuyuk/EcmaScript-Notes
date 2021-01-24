@@ -17,6 +17,8 @@ SOURCES:
 1. [https://www.udacity.com/course/es6-javascript-improved--ud356](https://www.udacity.com/course/es6-javascript-improved--ud356), Udacity "ES6 - JavaScript Improved" free course notes.
 2. [https://en.wikipedia.org/wiki/ECMAScript](https://en.wikipedia.org/wiki/ECMAScript), wikipedia, January, 2021
 3. [http://www.ecma-international.org](http://www.ecma-international.org), official site of ECMA
+4. [https://en.wikipedia.org/wiki/Ecma\_International](https://en.wikipedia.org/wiki/Ecma_International)
+5. [http://www.ecma-international.org/memento/index.html](http://www.ecma-international.org/memento/index.html)
 
 
 
