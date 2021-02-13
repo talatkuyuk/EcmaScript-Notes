@@ -2,7 +2,7 @@
 description: 'https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills'
 ---
 
-# Polyfill
+# Polyfills
 
 A polyfill, or polyfiller, is a piece of code \(or plugin\) that provides the technology that you, the developer, expect the browser to provide natively.
 
@@ -19,6 +19,11 @@ if (!String.prototype.startsWith) {
     return this.substr(position, searchString.length) === searchString;
   };
 }
+
+/* sample usage */
+'Udacity'.startsWith('Udac'); // returns `true`
+'Udacity'.startsWith('Udac', 2); // returns `false`
+'Udacity'.startsWith('ES6'); // returns `false`
 ```
 
 The `startsWith()` polyfill begins with `if (!String.prototype.startsWith)` in order to avoid overwriting the native one originated from EcmaScript.

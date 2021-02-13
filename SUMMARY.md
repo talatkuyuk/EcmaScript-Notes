@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Inspiration](README.md)
 
 ## General
 
@@ -39,5 +39,6 @@
 
 ## extra
 
-* [Polyfill](extra/polyfill.md)
+* [Polyfills](extra/polyfill.md)
+* [Transpiler](extra/transpiler.md)
 
