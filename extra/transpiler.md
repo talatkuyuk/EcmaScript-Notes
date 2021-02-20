@@ -34,5 +34,5 @@ Simple app that demos transpiling ES6 code to ES5 code with Babel: [https://gith
 
 We can write in ES6 and then use a transpiler to convert it to ES5 code. This lets us transform our project's code base to the newest version of the language while still letting it run everywhere. 
 
-Then, once all of the browsers your app has to run on fully support ES6 code, you can stop transpiling your code and just serve the straight ES6 code, directly!x
+Then, once all of the browsers your app has to run on fully support ES6 code, you can stop transpiling your code and just serve the straight ES6 code, directly!
 
